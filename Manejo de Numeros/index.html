@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Números</title>
+    <link rel="stylesheet" href="/estilos.css">
+    <script src="/bignumber.js/bignumber.min.js"></script>
+    <script src="/numeral.js/numeral.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Manejo de Numeros</h1>
+    </header>
+    <form id="forma" action="javascript:procesar()">
+        <p>
+            <label>
+                Primer Valor <br>
+                <input type="number" name="operador1" required min="1"  size="20">
+            </label>
+        </p>
+        <p>
+            <label>
+                Segundo Valor <br>
+                <input type="number" name="operador2" required min="1" size="20">
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Calcular">
+        </p>
+        <p>
+            <br><strong>Suma: </strong>  <output id="salidaSuma" ></output>
+            <br><strong>Resta: </strong><output id="salidaResta"></output>
+            <br><strong>Multiplicación: </strong><output id="salidaMultiplicacion"></output>
+            <br><strong>División: </strong><output id="salidaDivision"></output>
+        </p>
+    </form>
+    <footer>
+        Copyright 2021 Jair Botello
+    </footer>
+    <script src="/control.js"></script>
+</body>
+</html>
