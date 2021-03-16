@@ -8,18 +8,18 @@ body{
     text-align: left;
 }
 
-label{
+label, legend{
     font-weight: bold;
 }
 
-*:required{
+*:required, .obligatorio{
     border: thin solid blue;
 }
 
-input[type=number]{
+input[type=number], .numero{
     text-align: right;
 }
 
-output, footer{
+br + output, footer, form em{
     font-size: small;
 }
