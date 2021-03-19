@@ -21,8 +21,10 @@ function procesa(){
   fechaYHoraLocal = new Date(txtFechaYHoraLocal.value),
   semana = txtSemana.valueAsDate,
   mes = txtMes.valueAsDate;
+
  
-  salidaFecha.textContent = txtFecha.type + " | " + txtFecha.value + " | "
+  salidaFecha.textContent = txtFecha.type + " | " + ((fecha.getDate()+1) + '/' +
+  (fecha.getMonth()+1) + '/' + fecha.getFullYear()) + " | "
   + (fechaValueAsDate ? "|valueAsDate: "+ fechaValueAsDate : fecha);
 
   
