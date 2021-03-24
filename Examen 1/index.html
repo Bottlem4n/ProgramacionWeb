@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potencia de un Número</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Potencia de un Número</h1>
+    </header>
+    <form id="forma" action="javascript:calcularPotencia()">
+        <p>
+            <label>
+                <br>Base: <input type="number" name="base" required>
+                <br>Potencia: <input type="number" name="potencia" required>
+                <br>
+                <br>
+                <input type="submit" value="Calcular" >
+                <input type="button" value="Limpiar" onclick="javascript:limpiarArea()">
+                </br>
+            </label>
+        </p>
+        <p>
+            <textarea id="salidaResultados" cols="50" rows="25"></textarea>
+        </p>
+    </form>
+    <footer>Copyright 2021 - Jair Botello Contreras</footer>
+    <script src="control.js"></script>
+</body>
+</html>
