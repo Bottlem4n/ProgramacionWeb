@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <script src="/js/bignumber.min.js"></script>
+    <script src="/js/numeral.min.js"></script>
+    <title>Proveedor</title>
+</head>
+<body>
+    <header>
+        <h1>Proveedor</h1>
+    </header>
+
+    <form id="forma" action="javascript:mostrarPantalla()">
+        <p></p><em>El borde azul indica obligatorio</em></p>
+        <p>
+            <br>Clave   <input type="text" name="clave" placeholder="1 a 10 digitos" minlength="1" maxlength="10" size="15" required></br>
+            <br>Nombre  <input type="text" name="nombre" placeholder="1 a 50 caracteres" minlength="1" maxlength="50" size="15"
+            required></br>
+            <br>Teléfono    <input type="tel" name="telefono" placeholder="8 a 14 digitos" minlength="8" maxlength="14" size="15"
+            required></br>
+            <br>Fecha   <input type="date" name="fecha" required></br>
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Menú de Comida</legend>
+                <div><input type="checkbox" name="comidas" value="Hawaiana">Hawaiana $70.00</div>
+                <div><br><input type="checkbox" name="comidas" value="Queso">Queso $110.00</div>
+                <div><br><input type="checkbox" name="comidas" value="Milanesa">Milanesa $105.00</div>
+                <div><br><input type="checkbox" name="comidas" value="Jamón">Jamón $75.00</div>
+                <div><br><input type="checkbox" name="comidas" value="Alemana">Alemana $80.00</div>
+                <div><br><input type="checkbox" name="comidas" value="Española">Española $120.00</div>
+
+                <br> Seleccionaste: <output id="salidaSeleccion"></output>
+                <br> Total: <output id="salidaTotal"></output>
+            </fieldset>
+            <br><input type="submit" value="En Pantalla">
+            <input type="button" value="En Alerta" onclick="javascript:verAlerta()"/>
+        </p>
+        <p>
+            <output id="salidaProveedor"></output>
+        </p>
+    </form>
+    <footer>Copyright 2021 - Jair Botello Contreras</footer>
+    <script src="/js/control.js"></script>
+</body>
+</html>

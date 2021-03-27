@@ -1,0 +1,35 @@
+html{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body{
+    display: inline-block;
+    text-align: left;
+}
+
+*:required{
+    border: thin solid blue;
+}
+
+#datos {
+    font-weight: bold;
+}
+
+fieldset div{
+    font-weight: bold;
+}
+
+fieldset output{
+    font-weight: normal;
+}
+
+
+br + output, fieldset + output,footer,form em{
+    font-size: small;
+}
+
+
+#salidaProveedor{
+    font-size: small;
+}
