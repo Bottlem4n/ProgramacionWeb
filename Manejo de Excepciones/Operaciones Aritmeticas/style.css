@@ -1,0 +1,22 @@
+html{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body{
+    display: inline-block;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type=number]{
+    text-align: right;
+    border: thin solid blue;
+}
+
+output, footer{
+    font-size: small;
+}
